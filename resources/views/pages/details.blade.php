@@ -1,0 +1,1 @@
+<h1>Trang Detail</h1>   

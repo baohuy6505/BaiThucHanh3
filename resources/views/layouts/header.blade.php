@@ -15,19 +15,19 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Trang chủ</a>
+          <a class="nav-link {{$activePage == 'home' ? 'active' : ''}}" aria-current="page" href="/">Trang chủ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/menu">Menu</a>
+          <a class="nav-link {{$activePage == 'menu' ? 'active' : ''}}" href="/menu">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">Giới thiệu</a>
+          <a class="nav-link {{$activePage == 'about' ? 'active' : ''}}" href="/about">Giới thiệu</a>
         </li>
             <li class="nav-item">
-          <a class="nav-link" href="/beans-story">Câu chuyện Hạt cà phê</a>
+          <a class="nav-link {{$activePage == 'beansStory' ? 'active' : ''}}" href="/beans-story">Câu chuyện Hạt cà phê</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contact">Liên hệ</a>
+          <a class="nav-link {{$activePage == 'contact' ? 'active' : ''}}" href="/contact">Liên hệ</a>
         </li>
       </ul>
 
@@ -37,4 +37,4 @@
       </div> --}}
     </div>
   </div>
-</nav>
+</nav>   

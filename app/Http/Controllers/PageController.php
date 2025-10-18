@@ -1,26 +1,42 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
+
 class PageController extends Controller
 {
-    function home(){
-        return View('pages.home');
+    public function home()
+    {
+        $drink = array_slice($this->drink, 0, 3);
+        return View('pages.home', ['drinks' => $drink , 'activePage' => 'home']);
     }
 
-    function menu(){
-        return View('pages.menu');
+    public function menu()
+    {
+        $drink = $this->drink;
+        return View('pages.menu', ['drinks' => $drink , 'activePage' => 'menu']);
     }
 
-    function about(){
-        return View('pages.about');
+    public function about()
+    {
+        return View('pages.about',['activePage' => 'about']);
     }
 
-    function beansStory(){
-        return View('pages.beans-story');
+    public function beansStory()
+    {
+        return View('pages.beans-story',['activePage' => 'beansStory']);
     }
 
-    function contact(){
-        return View('pages.contact');
+    public function contact()
+    {
+        return View('pages.contact',['activePage' => 'menu']);
+    }
+
+    public function detail($id)
+    {
+        $drink = collect($this->drink)->firstWhere(('id'), $id);
+        //return View('page.detail',['drink' => $drink]);
+        return response()->json($drink, 200);
     }
 }
