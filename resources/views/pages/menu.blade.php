@@ -1,8 +1,41 @@
-@extends('layouts.app')  {{-- Kế thừa layout cha --}}
+@php
+$categories = ['Coffee', 'Tea', 'Bakery'];
+@endphp
 
-@section('title', 'Menu')  {{-- Chèn tiêu đề riêng --}}
+@extends('layouts.app')
 
-@section('content')  {{-- Phần thân được “đổ” vào @yield('content') --}}
-    <h1>Chào mừng đến với T3 Roastery Coffee</h1>
-    
+@section('title', 'Menu')
+
+@section('content')
+<section id="menu">
+  <div class="container">
+    <h2 class="menu__title">MENU</h2>
+
+    @foreach($categories as $category)
+      <div class="menu__box">
+        <h3 class="menu__box-title">{{ strtoupper($category) }}</h3>
+        <div class="row">
+          @foreach($drinks as $drink)
+            @if($drink['category'] == $category)
+              <div class="col-md-4 col-12">
+                <div class="menu__card">
+                  <div class="menu__image">
+                    <img src="./img/tvlatte.jpeg" alt="" class="menu__img" />
+                  </div>
+                  <div class="menu__content">
+                    <h3 class="menu__card-title">{{$drink['name']}}</h3>
+                    <p class="menu__card-price"> {{ number_format($drink['price'], 0, ',', '.') }} ₫</p>
+                    <p class="menu__card-desc">{{$drink['description']}}</p>
+                  </div>
+                  <a href="" class="menu__card-link">Xem thêm</a>
+                </div>
+              </div>
+            @endif
+          @endforeach
+        </div>
+      </div>
+    @endforeach
+
+  </div>
+</section>
 @endsection
