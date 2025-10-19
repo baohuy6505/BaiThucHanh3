@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 abstract class Controller
 {
     protected $drink = [
-    // ☕ Coffee
     [
         'id' => 1,
         'name' => 'Tinh Vân Latte',
@@ -38,8 +37,6 @@ abstract class Controller
         'description' => 'Sự kết hợp hoàn hảo giữa espresso và vệt sữa trắng.',
         'image' => 'images/macchiato.jpg'
     ],
-
-    // 🍵 Tea
     [
         'id' => 5,
         'name' => 'Trà Chanh Dây Vũ Trụ',
@@ -72,8 +69,6 @@ abstract class Controller
         'description' => 'Trà đen đậm vị kết hợp sữa tươi và trân châu mềm dai.',
         'image' => 'images/milktea.jpg'
     ],
-
-    // 🍰 Bakery
     [
         'id' => 9,
         'name' => 'Bánh Mây Matcha',

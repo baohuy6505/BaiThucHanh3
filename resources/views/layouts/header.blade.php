@@ -1,5 +1,6 @@
+
 {{-- resources/views/layouts/header.blade.php --}}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top" style="min-height: 70px">
   <div class="container">
     <a class="navbar-brand fw-bold" href="/">
       ☕ T3 Roastery Coffee
@@ -15,19 +16,19 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link {{$activePage == 'home' ? 'active' : ''}}" aria-current="page" href="/">Trang chủ</a>
+          <a class="nav-link {{$activePage == '/' ? 'active' : ''}}" href="{{ route('/')}}">Trang chủ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{$activePage == 'menu' ? 'active' : ''}}" href="/menu">Menu</a>
+          <a class="nav-link {{$activePage == 'menu' ? 'active' : ''}}" href="{{ route('menu')}}">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{$activePage == 'about' ? 'active' : ''}}" href="/about">Giới thiệu</a>
+          <a class="nav-link {{$activePage == 'about' ? 'active' : ''}}" href="{{ route('about')}}">Giới thiệu</a>
         </li>
             <li class="nav-item">
-          <a class="nav-link {{$activePage == 'beansStory' ? 'active' : ''}}" href="/beans-story">Câu chuyện Hạt cà phê</a>
+          <a class="nav-link {{$activePage == 'beansStory' ? 'active' : ''}}" href="{{ route('beansStory')}}">Câu chuyện Hạt cà phê</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{$activePage == 'contact' ? 'active' : ''}}" href="/contact">Liên hệ</a>
+          <a class="nav-link {{$activePage == 'contact' ? 'active' : ''}}" href="{{ route('contact')}}">Liên hệ</a>
         </li>
       </ul>
 
