@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
 {{-- CSS chính --}}
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 </head>
 <body>

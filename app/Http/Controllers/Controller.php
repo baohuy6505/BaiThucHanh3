@@ -10,8 +10,8 @@ abstract class Controller
         'name' => 'Tinh Vân Latte',
         'category' => 'Coffee',
         'price' => '55000',
-        'description' => 'Latte ngọt ngào với lớp bọt sữa mịn như mây.',
-        'image' => 'images/latte.jpg'
+        'description' => 'Latte ngọt ngào kết hợp cùng với lớp bọt sữa mịn như mây.',
+        'image' => 'img/tvlatte.jpeg'
     ],
     [
         'id' => 2,
@@ -19,7 +19,7 @@ abstract class Controller
         'category' => 'Coffee',
         'price' => '45000',
         'description' => 'Americano đậm đà, mạnh mẽ đánh thức mọi giác quan.',
-        'image' => 'images/americano.jpg'
+        'image' => 'img/2.jpg'
     ],
     [
         'id' => 3,
@@ -27,7 +27,7 @@ abstract class Controller
         'category' => 'Coffee',
         'price' => '60000',
         'description' => 'Cold brew ủ lạnh 24 giờ, mang hương vị của cả vũ trụ.',
-        'image' => 'images/coldbrew.jpg'
+        'image' => 'img/3.png'
     ],
     [
         'id' => 4,
@@ -35,7 +35,7 @@ abstract class Controller
         'category' => 'Coffee',
         'price' => '58000',
         'description' => 'Sự kết hợp hoàn hảo giữa espresso và vệt sữa trắng.',
-        'image' => 'images/macchiato.jpg'
+        'image' => 'img/4.webp'
     ],
     [
         'id' => 5,
@@ -43,7 +43,7 @@ abstract class Controller
         'category' => 'Tea',
         'price' => '49000',
         'description' => 'Trà chanh dây thanh mát, mang vị chua nhẹ và hương thơm tự nhiên.',
-        'image' => 'images/passiontea.jpg'
+        'image' => 'img/5.jpg'
     ],
     [
         'id' => 6,
@@ -51,7 +51,7 @@ abstract class Controller
         'category' => 'Tea',
         'price' => '45000',
         'description' => 'Trà chanh tươi kết hợp cùng mật ong dịu nhẹ, sảng khoái và dễ chịu.',
-        'image' => 'images/lemontea.jpg'
+        'image' => 'img/6.jpg'
     ],
     [
         'id' => 7,
@@ -59,7 +59,7 @@ abstract class Controller
         'category' => 'Tea',
         'price' => '52000',
         'description' => 'Trà hoa cúc thơm dịu giúp thư giãn, mang lại cảm giác bình yên.',
-        'image' => 'images/chamomiletea.jpg'
+        'image' => 'img/7.jpg'
     ],
     [
         'id' => 8,
@@ -67,7 +67,7 @@ abstract class Controller
         'category' => 'Tea',
         'price' => '55000',
         'description' => 'Trà đen đậm vị kết hợp sữa tươi và trân châu mềm dai.',
-        'image' => 'images/milktea.jpg'
+        'image' => 'img/8.png'
     ],
     [
         'id' => 9,
@@ -75,7 +75,7 @@ abstract class Controller
         'category' => 'Bakery',
         'price' => '65000',
         'description' => 'Bánh bông lan vị matcha thơm nhẹ, béo ngậy lớp kem tươi.',
-        'image' => 'images/matchacake.jpg'
+        'image' => 'img/9.jpg'
     ],
     [
         'id' => 10,
@@ -83,7 +83,7 @@ abstract class Controller
         'category' => 'Bakery',
         'price' => '70000',
         'description' => 'Bánh socola đậm đà, phủ lớp ganache mịn như nhung.',
-        'image' => 'images/chocolatecake.jpg'
+        'image' => 'img/10.jpg'
     ],
     [
         'id' => 11,
@@ -91,7 +91,7 @@ abstract class Controller
         'category' => 'Bakery',
         'price' => '68000',
         'description' => 'Bánh kem dâu tây tươi ngọt ngào, cân bằng vị chua nhẹ.',
-        'image' => 'images/strawberrycake.jpg'
+        'image' => 'img/11.jpg'
     ],
     [
         'id' => 12,
@@ -99,7 +99,7 @@ abstract class Controller
         'category' => 'Bakery',
         'price' => '55000',
         'description' => 'Bánh croissant bơ Pháp, giòn rụm và tan ngay trong miệng.',
-        'image' => 'images/croissant.jpg'
+        'image' => 'img/12.jpg'
     ],
 ];
 
@@ -109,42 +109,42 @@ abstract class Controller
         'name' => 'Hạt Sao Chổi (Ethiopia)',
         'origin' => 'Yirgacheffe, Ethiopia',
         'notes' => 'Hương hoa nhài, vị chua thanh của quả mọng.',
-        'image' => 'images/ethiopia.jpg'
+        'image' => 'img/B1.jpg'
     ],
     [
         'id' => 2,
         'name' => 'Hạt Thiên Thạch (Colombia)',
         'origin' => 'Huila, Colombia',
         'notes' => 'Vị ngọt caramel, sô cô la và một chút hương cam.',
-        'image' => 'images/colombia.jpg'
+        'image' => 'img/b2.jpg'
     ],
     [
         'id' => 3,
         'name' => 'Hạt Sao Bắc Đẩu (Brazil)',
         'origin' => 'Minas Gerais, Brazil',
         'notes' => 'Hương vị cân bằng giữa chocolate, hạt dẻ và caramel nhẹ.',
-        'image' => 'images/brazil.jpg'
+        'image' => 'img/B3.jpg'
     ],
     [
         'id' => 4,
         'name' => 'Hạt Ánh Trăng (Vietnam)',
         'origin' => 'Đà Lạt, Việt Nam',
         'notes' => 'Vị đậm đà truyền thống, hậu vị đắng nhẹ và hương cacao.',
-        'image' => 'images/vietnam.jpg'
+        'image' => 'img/B4.webp'
     ],
     [
         'id' => 5,
         'name' => 'Hạt Tinh Vân Xanh (Kenya)',
         'origin' => 'Nyeri, Kenya',
         'notes' => 'Vị chua táo đỏ, hương hoa quả tươi và vị ngọt đậm ở hậu vị.',
-        'image' => 'images/kenya.jpg'
+        'image' => 'img/B5.jpg'
     ],
     [
         'id' => 6,
         'name' => 'Hạt Sao Băng (Guatemala)',
         'origin' => 'Antigua, Guatemala',
         'notes' => 'Mùi thơm mật ong, chocolate đen và cam quýt.',
-        'image' => 'images/guatemala.jpg'
+        'image' => 'img/B6.jpg'
     ],
 ];
 

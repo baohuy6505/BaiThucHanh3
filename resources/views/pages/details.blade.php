@@ -9,17 +9,18 @@
             <!-- Product Image -->
             <div class="col-12 col-md-6 mb-4">
                 <div class="product-image-container">
-                  <img src="{{ asset('img/tvlatte.jpeg') }}" alt="Trà Chanh Dây Vũ Trụ" class="product-image img-fluid">                </div>
+                  <img src="{{asset($drink['image'])}}"  class="product-image img-fluid" style="min-height: 300px; max-height:400px">  
+                </div>
             </div>
 
             <!-- Product Info -->
             <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
              <div>
                      <div class="category-badge mb-3">
-                    <i class="fas fa-leaf me-1"></i>Tea
+                    <i class="fas fa-leaf me-1"></i>{{$drink['category']}}
                 </div>
                 
-                <h1 class="display-5 fw-bold text-dark mb-3">Trà Chanh Dây Vũ Trụ</h1>
+                <h1 class="display-5 fw-bold text-dark mb-3">{{$drink['name']}}</h1>
                 
                 <!-- Rating -->
                 <div class="d-flex align-items-center mb-3">
@@ -34,16 +35,14 @@
                 </div>
 
                 <!-- Price -->
-                <div class="price-badge">49.000₫</div>
+                <div class="price-badge">{{number_format($drink['price'], 0, ',', '.')}} ₫</div>
 
                 <!-- Description -->
                 <div class="card shadow-sm mb-4">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-info-circle me-2 text-success"></i>Mô tả sản phẩm</h5>
                         <p class="card-text text-muted">
-                            Trà chanh dây thanh mát, mang vị chua nhẹ và hương thơm tự nhiên. 
-                            Được pha chế từ những lá trà tươi ngon nhất, kết hợp với chanh dây 
-                            tự nhiên tạo nên hương vị độc đáo và sảng khoái.
+                            {{$drink['description']}}
                         </p>
                     </div>
                 </div>

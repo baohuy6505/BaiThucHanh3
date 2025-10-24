@@ -24,7 +24,7 @@
 <div class="col-md-4 col-12">
     <div class="featured__card">
         <div class="featured__image">
-            <img src="./img/tvlatte.jpeg" alt="" class="featured__img" />
+            <img src="{{$drink['image']}}" alt="" class="featured__img" />
         </div>
         <div class="featured__content">
             <h3 class="featured__card-title">{{ $drink['name'] }}</h3>

@@ -7,41 +7,19 @@
       <div class="container">
         <h2 class="bean__title">beans-story</h2>
         <div class="bean__body">
+         @foreach($beans as $bean)
           <div class="bean__box">
-            <img src="./img/hatsaochoi.jpg" alt="" class="bean__img" />
+            <img src="{{$bean['image']}}" alt="" class="bean__img" />
 
             <div class="bean__box-content">
-              <h3 class="bean__box-title">Tên: Hạt Sao Chổi (Ethiopia)</h3>
-              <p class="bean__origin">Nguồn gốc: Yirgacheffe, Ethiopia</p>
+              <h3 class="bean__box-title">Tên: {{$bean['name']}}</h3>
+              <p class="bean__origin">Nguồn gốc: {{$bean['origin']}}</p>
               <p class="bean__note">
-                Hương vị: Hương hoa nhài, vị chua thanh của quả mọng.
+                Hương vị: {{$bean['notes']}}
               </p>
             </div>
           </div>
-
-          <div class="bean__box">
-            <img src="./img/hatsaochoi.jpg" alt="" class="bean__img" />
-
-            <div class="bean__box-content">
-              <h3 class="bean__box-title">Tên: Hạt Sao Chổi (Ethiopia)</h3>
-              <p class="bean__origin">Nguồn gốc: Yirgacheffe, Ethiopia</p>
-              <p class="bean__note">
-                Hương vị: Hương hoa nhài, vị chua thanh của quả mọng.
-              </p>
-            </div>
-          </div>
-
-          <div class="bean__box">
-            <img src="./img/hatsaochoi.jpg" alt="" class="bean__img" />
-
-            <div class="bean__box-content">
-              <h3 class="bean__box-title">Tên: Hạt Sao Chổi (Ethiopia)</h3>
-              <p class="bean__origin">Nguồn gốc: Yirgacheffe, Ethiopia</p>
-              <p class="bean__note">
-                Hương vị: Hương hoa nhài, vị chua thanh của quả mọng.
-              </p>
-            </div>
-          </div>
+         @endforeach
         </div>
       </div>
     </section>

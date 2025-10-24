@@ -20,14 +20,14 @@ $categories = ['Coffee', 'Tea', 'Bakery'];
               <div class="col-md-4 col-12">
                 <div class="menu__card">
                   <div class="menu__image">
-                    <img src="./img/tvlatte.jpeg" alt="" class="menu__img" />
+                    <img src="{{$drink['image']}}" alt="" class="menu__img" />
                   </div>
                   <div class="menu__content">
                     <h3 class="menu__card-title">{{$drink['name']}}</h3>
                     <p class="menu__card-price"> {{ number_format($drink['price'], 0, ',', '.') }} ₫</p>
                     <p class="menu__card-desc">{{$drink['description']}}</p>
                   </div>
-                  <a href="" class="menu__card-link">Xem thêm</a>
+                  <a href="{{ route('detail', ['id' => $drink['id']]) }}" class="menu__card-link">Xem thêm</a>
                 </div>
               </div>
             @endif
